@@ -34,13 +34,15 @@
     <meta name="twitter:image" content="https://pisicloud.com/images/landing/hero-image.webp" />
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Critical Self-Hosted Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/roboto/roboto-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
     <app-root></app-root>

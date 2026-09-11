@@ -1,5 +1,61 @@
 @import 'tailwindcss';
 
+/* Self-hosted Roboto Font */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Discrete fallbacks for legacy/strict engines */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/roboto/roboto-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @theme {
   --font-sans:
     'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -38,49 +94,49 @@ app-root {
 
   /* Text Styles */
   --font-family-material-theme-display-large: 'Roboto';
-  --font-size-material-theme-display-large: 57pxpx;
+  --font-size-material-theme-display-large: 57px;
   --font-weight-material-theme-display-large: 600;
   --font-family-material-theme-display-medium: 'Roboto';
-  --font-size-material-theme-display-medium: 45pxpx;
+  --font-size-material-theme-display-medium: 45px;
   --font-weight-material-theme-display-medium: 600;
   --font-family-material-theme-display-small: 'Roboto';
-  --font-size-material-theme-display-small: 36pxpx;
+  --font-size-material-theme-display-small: 36px;
   --font-weight-material-theme-display-small: 400;
   --font-family-material-theme-headline-large: 'Roboto';
-  --font-size-material-theme-headline-large: 32pxpx;
+  --font-size-material-theme-headline-large: 32px;
   --font-weight-material-theme-headline-large: 500;
   --font-family-material-theme-headline-medium: 'Roboto';
-  --font-size-material-theme-headline-medium: 28pxpx;
+  --font-size-material-theme-headline-medium: 28px;
   --font-weight-material-theme-headline-medium: 500;
-  --font-family-material-theme-headline-small: 'Roboto Flex';
-  --font-size-material-theme-headline-small: 24pxpx;
+  --font-family-material-theme-headline-small: 'Roboto';
+  --font-size-material-theme-headline-small: 24px;
   --font-weight-material-theme-headline-small: 300;
   --font-family-material-theme-body-large: 'Roboto';
-  --font-size-material-theme-body-large: 16pxpx;
+  --font-size-material-theme-body-large: 16px;
   --font-weight-material-theme-body-large: 400;
   --font-family-material-theme-body-medium: 'Roboto';
-  --font-size-material-theme-body-medium: 14pxpx;
+  --font-size-material-theme-body-medium: 14px;
   --font-weight-material-theme-body-medium: 400;
   --font-family-material-theme-body-small: 'Roboto';
-  --font-size-material-theme-body-small: 12pxpx;
+  --font-size-material-theme-body-small: 12px;
   --font-weight-material-theme-body-small: 400;
   --font-family-material-theme-label-large: 'Roboto';
-  --font-size-material-theme-label-large: 14pxpx;
+  --font-size-material-theme-label-large: 14px;
   --font-weight-material-theme-label-large: 500;
   --font-family-material-theme-label-medium: 'Roboto';
-  --font-size-material-theme-label-medium: 12pxpx;
+  --font-size-material-theme-label-medium: 12px;
   --font-weight-material-theme-label-medium: 500;
   --font-family-material-theme-label-small: 'Roboto';
-  --font-size-material-theme-label-small: 11pxpx;
+  --font-size-material-theme-label-small: 11px;
   --font-weight-material-theme-label-small: 500;
   --font-family-material-theme-title-large: 'Roboto';
-  --font-size-material-theme-title-large: 22pxpx;
+  --font-size-material-theme-title-large: 22px;
   --font-weight-material-theme-title-large: 400;
   --font-family-material-theme-title-medium: 'Roboto';
-  --font-size-material-theme-title-medium: 16pxpx;
+  --font-size-material-theme-title-medium: 16px;
   --font-weight-material-theme-title-medium: 500;
   --font-family-material-theme-title-small: 'Roboto';
-  --font-size-material-theme-title-small: 14pxpx;
+  --font-size-material-theme-title-small: 14px;
   --font-weight-material-theme-title-small: 300;
 
   --md-sys-color-primary: rgb(6 107 91);
