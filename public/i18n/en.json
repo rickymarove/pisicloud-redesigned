@@ -567,11 +567,13 @@
     "NAVBAR": {
       "FEATURES_LABEL": "Features",
       "RESOURCES_LABEL": "Resources",
+      "SUPPORT_LABEL": "Support",
       "CONTACT_US": "Contact Us",
       "LANGUAGES_LABEL": "Languages",
       "ARIA": {
         "FEATURES_MENU": "Features navigation menu",
         "RESOURCES_MENU": "Resources navigation menu",
+        "SUPPORT_MENU": "Support navigation menu",
         "LANGUAGE_MENU": "Select Language",
         "MOBILE_NAV": "Mobile Navigation Menu",
         "TOGGLE_NAV": "Toggle navigation menu",
@@ -656,6 +658,23 @@
           "CONTACT": {
             "TITLE": "Contact Us",
             "DESC": "Consult your HR & enterprise system requirements."
+          }
+        }
+      },
+      "SUPPORT_MENU": {
+        "TITLE": "Support",
+        "ITEMS": {
+          "SOFTWARE_IMPLEMENTATION": {
+            "TITLE": "Software Implementation",
+            "DESC": "Structured rollout and tailored ERP deployment solutions."
+          },
+          "TRAINING": {
+            "TITLE": "Training & Re-Implementation",
+            "DESC": "Workforce enablement, workshops, and system refreshes."
+          },
+          "CUSTOMIZE": {
+            "TITLE": "Customize Module",
+            "DESC": "Custom modules built for your exact business workflows."
           }
         }
       }

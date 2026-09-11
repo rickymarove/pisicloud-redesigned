@@ -18,6 +18,8 @@ export type NavbarFeatureIconType =
 
 export type NavbarResourceIconType = 'about' | 'strategy' | 'customers' | 'contact';
 
+export type NavbarSupportIconType = 'software-implementation' | 'training' | 'customize';
+
 export interface NavbarFeatureItemConfig {
   readonly id: string;
   readonly titleKey: string;
@@ -34,6 +36,15 @@ export interface NavbarResourceItemConfig {
   readonly route: string;
   readonly fragment?: string;
   readonly iconType: NavbarResourceIconType;
+}
+
+export interface NavbarSupportItemConfig {
+  readonly id: string;
+  readonly titleKey: string;
+  readonly descKey?: string;
+  readonly route: string;
+  readonly fragment?: string;
+  readonly iconType: NavbarSupportIconType;
 }
 
 export interface NavbarCategoryConfig {

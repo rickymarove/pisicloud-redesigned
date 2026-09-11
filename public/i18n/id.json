@@ -567,11 +567,13 @@
     "NAVBAR": {
       "FEATURES_LABEL": "Fitur",
       "RESOURCES_LABEL": "Sumber Daya",
+      "SUPPORT_LABEL": "Dukungan",
       "CONTACT_US": "Hubungi Kami",
       "LANGUAGES_LABEL": "Bahasa",
       "ARIA": {
         "FEATURES_MENU": "Menu navigasi fitur",
         "RESOURCES_MENU": "Menu navigasi sumber daya",
+        "SUPPORT_MENU": "Menu navigasi dukungan",
         "LANGUAGE_MENU": "Pilih Bahasa",
         "MOBILE_NAV": "Menu Navigasi Mobile",
         "TOGGLE_NAV": "Buka/tutup menu navigasi",
@@ -656,6 +658,23 @@
           "CONTACT": {
             "TITLE": "Hubungi Kami",
             "DESC": "Konsultasikan kebutuhan sistem HR & bisnis Anda."
+          }
+        }
+      },
+      "SUPPORT_MENU": {
+        "TITLE": "Dukungan",
+        "ITEMS": {
+          "SOFTWARE_IMPLEMENTATION": {
+            "TITLE": "Implementasi Perangkat Lunak",
+            "DESC": "Penerapan terstruktur dan solusi implementasi ERP terpadu."
+          },
+          "TRAINING": {
+            "TITLE": "Pelatihan & Re-Implementasi",
+            "DESC": "Pelatihan tim kerja, lokakarya, dan penyegaran sistem."
+          },
+          "CUSTOMIZE": {
+            "TITLE": "Kustomisasi Modul",
+            "DESC": "Modul khusus yang disesuaikan dengan alur kerja bisnis Anda."
           }
         }
       }

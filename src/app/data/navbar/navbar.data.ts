@@ -2,6 +2,7 @@ import {
   NavbarCategoryConfig,
   NavbarFeatureItemConfig,
   NavbarResourceItemConfig,
+  NavbarSupportItemConfig,
 } from './navbar.model';
 
 export const NAVBAR_CATEGORIES: readonly NavbarCategoryConfig[] = [
@@ -138,5 +139,30 @@ export const NAVBAR_RESOURCES: readonly NavbarResourceItemConfig[] = [
     descKey: 'UNIVERSAL.NAVBAR.RESOURCES_MENU.ITEMS.CONTACT.DESC',
     route: '/contact-us',
     iconType: 'contact',
+  },
+];
+
+export const NAVBAR_SUPPORTS: readonly NavbarSupportItemConfig[] = [
+  {
+    id: 'software-implementation',
+    titleKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.SOFTWARE_IMPLEMENTATION.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.SOFTWARE_IMPLEMENTATION.DESC',
+    route: '/',
+    fragment: 'solution',
+    iconType: 'software-implementation',
+  },
+  {
+    id: 'training',
+    titleKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.TRAINING.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.TRAINING.DESC',
+    route: '/training-implementation',
+    iconType: 'training',
+  },
+  {
+    id: 'customize',
+    titleKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.CUSTOMIZE.TITLE',
+    descKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.CUSTOMIZE.DESC',
+    route: '/customize-module',
+    iconType: 'customize',
   },
 ];

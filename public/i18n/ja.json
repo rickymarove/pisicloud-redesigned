@@ -567,11 +567,13 @@
     "NAVBAR": {
       "FEATURES_LABEL": "機能",
       "RESOURCES_LABEL": "リソース",
+      "SUPPORT_LABEL": "サポート",
       "CONTACT_US": "お問い合わせ",
       "LANGUAGES_LABEL": "言語",
       "ARIA": {
         "FEATURES_MENU": "機能ナビゲーションメニュー",
         "RESOURCES_MENU": "リソースナビゲーションメニュー",
+        "SUPPORT_MENU": "サポートナビゲーションメニュー",
         "LANGUAGE_MENU": "言語を選択",
         "MOBILE_NAV": "モバイルナビゲーションメニュー",
         "TOGGLE_NAV": "ナビゲーションメニューの切り替え",
@@ -656,6 +658,23 @@
           "CONTACT": {
             "TITLE": "お問い合わせ",
             "DESC": "HRシステムとビジネスのニーズをご相談ください。"
+          }
+        }
+      },
+      "SUPPORT_MENU": {
+        "TITLE": "サポート",
+        "ITEMS": {
+          "SOFTWARE_IMPLEMENTATION": {
+            "TITLE": "ソフトウェアの実装",
+            "DESC": "構造化された導入とカスタマイズされたERP展開。"
+          },
+          "TRAINING": {
+            "TITLE": "トレーニングと再実装",
+            "DESC": "チームトレーニング、ワークショップ、システム更新。"
+          },
+          "CUSTOMIZE": {
+            "TITLE": "モジュールカスタマイズ",
+            "DESC": "業務フローに最適化された専用カスタムモジュール。"
           }
         }
       }

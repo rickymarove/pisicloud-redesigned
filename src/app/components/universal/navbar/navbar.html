@@ -36,6 +36,12 @@
         (menuClosed)="closeMenus()"
       />
 
+      <navbar-support-menu
+        [isOpen]="activeMenu() === 'support'"
+        (menuToggled)="toggleMenu('support')"
+        (menuClosed)="closeMenus()"
+      />
+
       <div class="h-5 w-0.5 rounded-full bg-slate-300/90 mx-0.5 sm:mx-1 shrink-0" aria-hidden="true"></div>
 
       <navbar-language-menu
@@ -142,6 +148,11 @@
       />
 
       <navbar-resources-menu
+        variant="mobile"
+        (itemClick)="closeMobileMenu()"
+      />
+
+      <navbar-support-menu
         variant="mobile"
         (itemClick)="closeMobileMenu()"
       />

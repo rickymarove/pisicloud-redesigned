@@ -13,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FeaturesMenu } from './features-menu/features-menu';
 import { ResourcesMenu } from './resources-menu/resources-menu';
+import { SupportMenu } from './support-menu/support-menu';
 import {
   LanguageMenu,
   type LanguageOption,
@@ -22,7 +23,7 @@ import { LanguageService, type Language } from '../../../core/language.service';
 
 export { type LanguageOption, SUPPORTED_LANGUAGES };
 
-export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
+export type ActiveNavMenu = 'features' | 'resources' | 'support' | 'language' | null;
 
 @Component({
   selector: 'universal-navbar',
@@ -32,6 +33,7 @@ export type ActiveNavMenu = 'features' | 'resources' | 'language' | null;
     TranslatePipe,
     FeaturesMenu,
     ResourcesMenu,
+    SupportMenu,
     LanguageMenu,
   ],
   templateUrl: './navbar.html',
@@ -105,7 +107,7 @@ export class Navbar {
     this.isMobileMenuOpen.set(false);
   }
 
-  toggleMenu(menu: 'features' | 'resources' | 'language'): void {
+  toggleMenu(menu: 'features' | 'resources' | 'support' | 'language'): void {
     this.activeMenu.update((curr) => (curr === menu ? null : menu));
   }
 

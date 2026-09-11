@@ -567,11 +567,13 @@
     "NAVBAR": {
       "FEATURES_LABEL": "기능",
       "RESOURCES_LABEL": "리소스",
+      "SUPPORT_LABEL": "지원",
       "CONTACT_US": "문의하기",
       "LANGUAGES_LABEL": "언어",
       "ARIA": {
         "FEATURES_MENU": "기능 탐색 메뉴",
         "RESOURCES_MENU": "리소스 탐색 메뉴",
+        "SUPPORT_MENU": "지원 탐색 메뉴",
         "LANGUAGE_MENU": "언어 선택",
         "MOBILE_NAV": "모바일 탐색 메뉴",
         "TOGGLE_NAV": "탐색 메뉴 토글",
@@ -656,6 +658,23 @@
           "CONTACT": {
             "TITLE": "문의하기",
             "DESC": "HR 시스템 및 비즈니스 요구사항을 상담해 보세요。"
+          }
+        }
+      },
+      "SUPPORT_MENU": {
+        "TITLE": "지원",
+        "ITEMS": {
+          "SOFTWARE_IMPLEMENTATION": {
+            "TITLE": "소프트웨어 구현",
+            "DESC": "체계적인 도입 및 맞춤형 ERP 배포 솔루션."
+          },
+          "TRAINING": {
+            "TITLE": "교육 및 재구현",
+            "DESC": "팀 역량 강화, 워크숍 및 시스템 재정비."
+          },
+          "CUSTOMIZE": {
+            "TITLE": "모듈 커스터마이징",
+            "DESC": "비즈니스 워크플로에 맞춘 맞춤형 소프트웨어 모듈."
           }
         }
       }

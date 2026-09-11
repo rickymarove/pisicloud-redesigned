@@ -4,11 +4,29 @@ import { LanguageService } from './language.service';
 
 describe('LanguageService', () => {
   let service: LanguageService;
+  let mockStorage: Record<string, string> = {};
 
   beforeEach(() => {
-    if (typeof localStorage !== 'undefined') {
-      localStorage.clear();
-    }
+    mockStorage = {};
+    const storageMock = {
+      getItem: (key: string) => mockStorage[key] ?? null,
+      setItem: (key: string, value: string) => {
+        mockStorage[key] = value;
+      },
+      removeItem: (key: string) => {
+        delete mockStorage[key];
+      },
+      clear: () => {
+        mockStorage = {};
+      },
+    };
+
+    Object.defineProperty(globalThis, 'localStorage', {
+      value: storageMock,
+      writable: true,
+      configurable: true,
+    });
+
     TestBed.configureTestingModule({
       providers: [provideTranslateService(), LanguageService],
     });
@@ -20,7 +38,7 @@ describe('LanguageService', () => {
   });
 
   it('should initialize with supported language and return observable', () => {
-    localStorage.setItem('app-lang', 'en');
+    mockStorage['app-lang'] = 'en';
     const init$ = service.init();
     expect(init$).toBeTruthy();
     expect(service.getLanguage()).toBe('en');

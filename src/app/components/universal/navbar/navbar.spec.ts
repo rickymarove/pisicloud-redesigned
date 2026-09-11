@@ -4,7 +4,7 @@ import { provideRouter, Router } from '@angular/router';
 import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { Navbar } from './navbar';
 import { LanguageService } from '../../../core/language.service';
-import { NAVBAR_FEATURES, NAVBAR_RESOURCES } from '../../../data/navbar';
+import { NAVBAR_FEATURES, NAVBAR_RESOURCES, NAVBAR_SUPPORTS } from '../../../data/navbar';
 
 @Component({
   template: '',
@@ -28,6 +28,8 @@ describe('UniversalNavbar', () => {
           { path: 'feature', component: DummyComponent },
           { path: 'feature/:slug', component: DummyComponent },
           { path: 'about-pisi', component: DummyComponent },
+          { path: 'training-implementation', component: DummyComponent },
+          { path: 'customize-module', component: DummyComponent },
         ]),
         provideTranslateService({
           fallbackLang: 'en',
@@ -45,11 +47,13 @@ describe('UniversalNavbar', () => {
         NAVBAR: {
           FEATURES_LABEL: 'Features',
           RESOURCES_LABEL: 'Resources',
+          SUPPORT_LABEL: 'Support',
           CONTACT_US: 'Contact Us',
           LANGUAGES_LABEL: 'Languages',
           ARIA: {
             FEATURES_MENU: 'Features navigation menu',
             RESOURCES_MENU: 'Resources navigation menu',
+            SUPPORT_MENU: 'Support navigation menu',
             LANGUAGE_MENU: 'Select Language',
             MOBILE_NAV: 'Mobile Navigation Menu',
             TOGGLE_NAV: 'Toggle navigation menu',
@@ -73,6 +77,23 @@ describe('UniversalNavbar', () => {
               },
             },
           },
+          SUPPORT_MENU: {
+            TITLE: 'Support',
+            ITEMS: {
+              SOFTWARE_IMPLEMENTATION: {
+                TITLE: 'Software Implementation',
+                DESC: 'Complete enterprise software setup',
+              },
+              TRAINING: {
+                TITLE: 'Training & Re-Implementation',
+                DESC: 'Comprehensive team training sessions',
+              },
+              CUSTOMIZE: {
+                TITLE: 'Customize Module',
+                DESC: 'Tailored modular business solutions',
+              },
+            },
+          },
         },
       },
     });
@@ -81,6 +102,7 @@ describe('UniversalNavbar', () => {
         NAVBAR: {
           FEATURES_LABEL: 'Fitur',
           RESOURCES_LABEL: 'Sumber Daya',
+          SUPPORT_LABEL: 'Dukungan',
           CONTACT_US: 'Hubungi Kami',
           LANGUAGES_LABEL: 'Bahasa',
         },
@@ -104,6 +126,17 @@ describe('UniversalNavbar', () => {
     expect(aboutResource?.route).toBe('/about-pisi');
     const contactResource = NAVBAR_RESOURCES.find((r) => r.id === 'contact');
     expect(contactResource?.route).toBe('/contact-us');
+  });
+
+  it('should have 3 support items configured in navbar data', () => {
+    expect(NAVBAR_SUPPORTS.length).toBe(3);
+    const software = NAVBAR_SUPPORTS.find((s) => s.id === 'software-implementation');
+    expect(software?.route).toBe('/');
+    expect(software?.fragment).toBe('solution');
+    const training = NAVBAR_SUPPORTS.find((s) => s.id === 'training');
+    expect(training?.route).toBe('/training-implementation');
+    const customize = NAVBAR_SUPPORTS.find((s) => s.id === 'customize');
+    expect(customize?.route).toBe('/customize-module');
   });
 
   it('should render translated contact button text', () => {
@@ -136,6 +169,11 @@ describe('UniversalNavbar', () => {
 
     component.toggleMenu('resources');
     expect(component.activeMenu()).toBe('resources');
+    component.toggleMenu('resources');
+    expect(component.activeMenu()).toBeNull();
+
+    component.toggleMenu('support');
+    expect(component.activeMenu()).toBe('support');
     component.closeMenus();
     expect(component.activeMenu()).toBeNull();
   });
@@ -240,4 +278,16 @@ describe('UniversalNavbar', () => {
     expect(resourcesButton?.classList.contains('text-[#00382f]')).toBe(true);
     expect(resourcesButton?.classList.contains('font-semibold')).toBe(true);
   });
+
+  it('should mark Support menu button active when on /training-implementation', async () => {
+    await router.navigateByUrl('/training-implementation');
+    fixture.detectChanges();
+
+    const compiled = fixture.nativeElement as HTMLElement;
+    const supportButton = compiled.querySelector('navbar-support-menu button');
+    expect(supportButton?.classList.contains('bg-[#cde8e0]')).toBe(true);
+    expect(supportButton?.classList.contains('text-[#00382f]')).toBe(true);
+    expect(supportButton?.classList.contains('font-semibold')).toBe(true);
+  });
 });
+

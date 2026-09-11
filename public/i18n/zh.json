@@ -567,11 +567,13 @@
     "NAVBAR": {
       "FEATURES_LABEL": "功能",
       "RESOURCES_LABEL": "资源",
+      "SUPPORT_LABEL": "支持",
       "CONTACT_US": "联系我们",
       "LANGUAGES_LABEL": "语言",
       "ARIA": {
         "FEATURES_MENU": "功能导航菜单",
         "RESOURCES_MENU": "资源导航菜单",
+        "SUPPORT_MENU": "支持导航菜单",
         "LANGUAGE_MENU": "选择语言",
         "MOBILE_NAV": "移动端导航菜单",
         "TOGGLE_NAV": "切换导航菜单",
@@ -656,6 +658,23 @@
           "CONTACT": {
             "TITLE": "联系我们",
             "DESC": "咨询您的 HR 系统与企业业务需求。"
+          }
+        }
+      },
+      "SUPPORT_MENU": {
+        "TITLE": "支持",
+        "ITEMS": {
+          "SOFTWARE_IMPLEMENTATION": {
+            "TITLE": "软件实施",
+            "DESC": "结构化上线及定制化 ERP 部署方案。"
+          },
+          "TRAINING": {
+            "TITLE": "培训与重新实施",
+            "DESC": "员工赋能、专题培训与系统重构服务。"
+          },
+          "CUSTOMIZE": {
+            "TITLE": "模块定制",
+            "DESC": "专为您的业务流程量身定制的专属模块。"
           }
         }
       }
