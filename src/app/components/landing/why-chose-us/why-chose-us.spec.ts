@@ -86,4 +86,10 @@ describe('WhyChoseUs', () => {
       expect(lastCard.classList.contains('flex-1')).toBe(true);
     });
   });
+
+  it('should not render any arrow icons in the cards', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const svgs = compiled.querySelectorAll('.grid svg');
+    expect(svgs.length).toBe(0);
+  });
 });
