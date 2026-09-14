@@ -74,10 +74,16 @@
           <a
             mat-flat-button
             routerLink="/contact-us"
-            class="rounded-full! bg-white! hover:bg-[#f4fcf7]! text-[#066b5b]! px-7! py-3.5! h-auto! font-bold! text-sm! sm:text-base! shadow-md! hover:shadow-lg! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+            class="group/btn rounded-full! bg-white! hover:bg-[#f4fcf7]! text-[#066b5b]! px-7 sm:px-8! py-3.5! h-auto! font-semibold! text-sm! sm:text-base! shadow-md! hover:shadow-lg! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center"
           >
-            <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.CALLOUT.CTA_BUTTON' | translate }}</span>
-            <ng-icon name="tablerArrowRight" class="text-base text-[#066b5b]" aria-hidden="true" />
+            <span class="inline-flex items-center gap-2.5 justify-center">
+              <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.CALLOUT.CTA_BUTTON' | translate }}</span>
+              <ng-icon
+                name="tablerArrowRight"
+                class="text-lg sm:text-xl text-[#066b5b] shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
+                aria-hidden="true"
+              />
+            </span>
           </a>
         </div>
       </div>
