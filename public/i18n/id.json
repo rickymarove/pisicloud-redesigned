@@ -962,6 +962,10 @@
         "TITLE": "Strategi Implementasi - Panduan Rollout HR | PisiCloud",
         "DESCRIPTION": "Pelajari metodologi penerapan sistem HR & payroll PisiCloud yang teruji untuk transisi operasional yang mulus."
       },
+      "SOFTWARE_IMPLEMENTATION": {
+        "TITLE": "Implementasi Perangkat Lunak - Transisi HR & Payroll Mulus | PisiCloud",
+        "DESCRIPTION": "Layanan implementasi perangkat lunak enterprise menyeluruh untuk PisiCloud HR. Jaminan nol kehilangan data, integrasi biometrik, dan pengujian paralel payroll."
+      },
       "CONTACT_US": {
         "TITLE": "Hubungi Kami - Konsultasi & Jadwalkan Demo | PisiCloud",
         "DESCRIPTION": "Hubungi tim sales dan dukungan PisiCloud untuk informasi produk, demo aplikasi, atau penawaran harga terbaik."
@@ -1167,6 +1171,106 @@
           "OUTPUT_LABEL": "Output Utama",
           "OUTPUT_TEXT": "Operasional Sistem Live di Produksi, Stabilisasi Sistem, dan Layanan Dukungan Berkelanjutan."
         }
+      }
+    }
+  },
+  "SOFTWARE_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "Layanan Menyeluruh ",
+      "TITLE_HIGHLIGHT": "Implementasi Perangkat Lunak",
+      "TITLE_SUFFIX": " untuk Perusahaan Berkembang",
+      "DESCRIPTION": "Transisi mulus dari spreadsheet manual dan sistem lawas ke platform HR dan payroll cloud terpadu PisiCloud. Spesialis implementasi tersertifikasi kami memastikan integritas data terjamin, tanpa gangguan operasional bisnis, dan pendampingan menyeluruh.",
+      "CTA_PRIMARY": "Konsultasi Implementasi",
+      "CTA_SECONDARY": "Pelajari Metodologi",
+      "IMAGE_ALT": "Ilustrasi dashboard implementasi perangkat lunak dan sistem cloud HR PisiCloud"
+    },
+    "PILLARS": {
+      "TITLE_PREFIX": "Layanan Lengkap untuk ",
+      "TITLE_HIGHLIGHT": "Penerapan Sistem yang Mulus",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "Mulai dari ekstraksi data hingga validasi paralel payroll, layanan terstruktur kami memastikan kesiapan operasional penuh tanpa hambatan.",
+      "ITEMS": {
+        "DATA_MIGRATION": {
+          "TITLE": "Migrasi Data Otomatis & Aman",
+          "DESCRIPTION": "Ekstraksi, pembersihan, dan validasi menyeluruh untuk riwayat data karyawan, saldo cuti, struktur gaji, dan ID biometrik dengan akurasi audit 100%."
+        },
+        "CONFIGURATION": {
+          "TITLE": "Konfigurasi Alur Kerja & Kebijakan",
+          "DESCRIPTION": "Penyesuaian jadwal shift rumit, persetujuan bertingkat, regulasi pajak Indonesia (PPh 21 TER), perhitungan BPJS Ketenagakerjaan & Kesehatan, serta struktur organisasi."
+        },
+        "INTEGRATION": {
+          "TITLE": "Integrasi Perangkat Keras & Biometrik",
+          "DESCRIPTION": "Konektivitas plug-and-play langsung dengan mesin sidik jari fisik, terminal pengenalan wajah, gerbang akses, dan sistem ERP korporat lainnya."
+        },
+        "VALIDATION": {
+          "TITLE": "Simulasi Payroll Paralel & UAT Ketat",
+          "DESCRIPTION": "Pengujian menyeluruh berdampingan dengan siklus payroll berjalan untuk memastikan kalkulasi tepat hingga rupiah terkecil sebelum cutover resmi."
+        }
+      }
+    },
+    "PROCESS": {
+      "TITLE_PREFIX": "4 Tahapan Terstruktur ",
+      "TITLE_HIGHLIGHT": "Metodologi Penerapan",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "Metodologi teruji dan transparan yang dirancang untuk meminimalkan downtime, menjaga akurasi data, dan menjamin adopsi pengguna yang lancar.",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "PHASE": "Tahap 01",
+          "TITLE": "Eksplorasi & Audit Kebutuhan",
+          "DESCRIPTION": "Workshop mendalam bersama tim HR, payroll, dan IT Anda untuk memetakan alur kerja saat ini, mengidentifikasi celah operasional, dan menentukan target jadwal."
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "PHASE": "Tahap 02",
+          "TITLE": "Setup & Konfigurasi Sistem",
+          "DESCRIPTION": "Penyediaan lingkungan cloud, pemodelan struktur organisasi, pengaturan matriks shift absensi, dan pengujian formula payroll kustom."
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "PHASE": "Tahap 03",
+          "TITLE": "Migrasi Data & Pelatihan Tim",
+          "DESCRIPTION": "Pemindahan master data secara aman, sinkronisasi mesin absensi, serta pelatihan berbasis peran untuk admin HR, manajer, dan karyawan."
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "PHASE": "Tahap 04",
+          "TITLE": "Paralel Run, Go-Live & Hypercare",
+          "DESCRIPTION": "Verifikasi perhitungan payroll ganda, peluncuran langsung operasional, dan dukungan hypercare intensif selama 30 hari bersama teknisi kami."
+        }
+      }
+    },
+    "GUARANTEES": {
+      "TITLE_PREFIX": "Mengapa Perusahaan Mempercayakan ",
+      "TITLE_HIGHLIGHT": "Implementasi PisiCloud",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "Kami memadukan pengalaman puluhan tahun di industri HR dengan rekayasa perangkat lunak modern untuk memastikan transisi sistem berjalan mudah.",
+      "ITEMS": {
+        "NO_DOWNTIME": {
+          "NUMBER": "01",
+          "TITLE": "Nol Gangguan Operasional Bisnis",
+          "DESCRIPTION": "Aktivitas harian, pencatatan absensi, dan pembayaran gaji perusahaan Anda tetap berjalan normal tanpa downtime sedetik pun selama implementasi."
+        },
+        "SECURITY": {
+          "NUMBER": "02",
+          "TITLE": "Keamanan Data Standar Perbankan",
+          "DESCRIPTION": "Enkripsi data ujung-ke-ujung, isolasi akses yang ketat, dan aturan validasi otomatis menjamin kerahasiaan penuh dan bebas dari galat."
+        },
+        "SPECIALIST": {
+          "NUMBER": "03",
+          "TITLE": "Spesialis Implementasi Khusus",
+          "DESCRIPTION": "Seorang konsultan ahli HR didedikasikan secara khusus untuk organisasi Anda guna memandu konfigurasi, memantau tahapan, dan melatih staf Anda."
+        },
+        "LOCAL_COMPLIANCE": {
+          "NUMBER": "04",
+          "TITLE": "100% Kepatuhan Regulasi Indonesia",
+          "DESCRIPTION": "Terkonfigurasi sesuai regulasi ketenagakerjaan Indonesia terkini, tabel tarif efektif rata-rata (TER) PPh 21, dan formula resmi BPJS."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "Siap Melakukan Penerapan Sistem yang Mulus?",
+        "DESCRIPTION": "Jadwalkan sesi konsultasi dengan konsultan implementasi kami untuk menyusun jadwal transisi organisasi Anda.",
+        "CTA_BUTTON": "Hubungi Spesialis Implementasi"
       }
     }
   }

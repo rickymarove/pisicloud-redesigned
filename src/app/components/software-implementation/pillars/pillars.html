@@ -1,0 +1,50 @@
+<section
+  id="pillars"
+  class="relative w-full py-16 sm:py-20 lg:py-24 bg-white font-sans"
+  aria-labelledby="pillars-heading"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Section Header with Two-Tone Formula -->
+    <div class="mx-auto max-w-3xl text-center mb-12 sm:mb-16">
+      <h2
+        id="pillars-heading"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#191c1b] tracking-tight leading-tight mb-4"
+      >
+        <span>{{ 'SOFTWARE_IMPLEMENTATION.PILLARS.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#066b5b]">{{ 'SOFTWARE_IMPLEMENTATION.PILLARS.TITLE_HIGHLIGHT' | translate }}</span>
+        <span>{{ 'SOFTWARE_IMPLEMENTATION.PILLARS.TITLE_SUFFIX' | translate }}</span>
+      </h2>
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        {{ 'SOFTWARE_IMPLEMENTATION.PILLARS.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <!-- 2x2 Bento Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      @for (pillar of pillars; track pillar.key) {
+        <div
+          class="group relative flex flex-col rounded-2xl sm:rounded-3xl border border-[#dce6df] bg-[#f8faf8]/60 p-7 sm:p-9 transition-all duration-300 hover:border-[#066b5b]/40 hover:bg-white hover:shadow-xl hover:-translate-y-1"
+        >
+          <!-- Icon Container -->
+          <div class="mb-6">
+            <div
+              class="w-14 h-14 rounded-2xl bg-[#cde8e0]/60 text-[#066b5b] flex items-center justify-center transition-all duration-300 group-hover:bg-[#066b5b] group-hover:text-white group-hover:scale-105 shadow-xs"
+            >
+              <ng-icon [name]="pillar.icon" class="text-2xl" aria-hidden="true" />
+            </div>
+          </div>
+
+          <!-- Card Title -->
+          <h3 class="text-xl sm:text-2xl font-bold text-[#191c1b] tracking-tight mb-3 group-hover:text-[#066b5b] transition-colors">
+            {{ 'SOFTWARE_IMPLEMENTATION.PILLARS.ITEMS.' + pillar.key + '.TITLE' | translate }}
+          </h3>
+
+          <!-- Description -->
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal m-0">
+            {{ 'SOFTWARE_IMPLEMENTATION.PILLARS.ITEMS.' + pillar.key + '.DESCRIPTION' | translate }}
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
