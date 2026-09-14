@@ -76,6 +76,37 @@ describe('SoftwareImplementation Process', () => {
     expect(steps[3].textContent).toContain('Parallel Run, Go-Live & Hypercare');
   });
 
+  it('should render vertical spine and 4 connecting nodes', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const spine = compiled.querySelector('.timeline-spine');
+    expect(spine).toBeTruthy();
+
+    const nodes = compiled.querySelectorAll('.timeline-node');
+    expect(nodes.length).toBe(4);
+  });
+
+  it('should alternate rows left and right along the spine', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const rows = compiled.querySelectorAll('.timeline-row');
+    expect(rows.length).toBe(4);
+
+    // Phase 01: Right-aligned (even index 0)
+    expect(rows[0].classList.contains('lg:justify-end')).toBe(true);
+    expect(rows[0].classList.contains('lg:justify-start')).toBe(false);
+
+    // Phase 02: Left-aligned (odd index 1)
+    expect(rows[1].classList.contains('lg:justify-start')).toBe(true);
+    expect(rows[1].classList.contains('lg:justify-end')).toBe(false);
+
+    // Phase 03: Right-aligned (even index 2)
+    expect(rows[2].classList.contains('lg:justify-end')).toBe(true);
+    expect(rows[2].classList.contains('lg:justify-start')).toBe(false);
+
+    // Phase 04: Left-aligned (odd index 3)
+    expect(rows[3].classList.contains('lg:justify-start')).toBe(true);
+    expect(rows[3].classList.contains('lg:justify-end')).toBe(false);
+  });
+
   it('should not contain badge or chip elements', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('mat-chip')).toBeFalsy();
