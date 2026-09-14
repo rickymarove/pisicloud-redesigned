@@ -12,7 +12,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import { bootstrapCheck2 } from '@ng-icons/bootstrap-icons';
+import {
+  bootstrapCheck2,
+  bootstrapChevronLeft,
+  bootstrapChevronRight,
+} from '@ng-icons/bootstrap-icons';
 
 export interface DetailedStep {
   readonly id: string;
@@ -64,6 +68,8 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
   viewProviders: [
     provideIcons({
       bootstrapCheck2,
+      bootstrapChevronLeft,
+      bootstrapChevronRight,
     }),
   ],
   templateUrl: './detailed-roadmap.html',
@@ -71,6 +77,13 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
     :host {
       display: block;
       width: 100%;
+    }
+
+    :host ::ng-deep .mat-mdc-button .mdc-button__label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
     }
   `,
 })
@@ -128,19 +141,33 @@ export class DetailedRoadmap implements OnInit, OnDestroy {
     if (index >= 0 && index < this.steps.length) {
       this.activeIndex.set(index);
       this.progress.set(0);
+      this.scrollToActiveTab(index);
     }
   }
 
   prevStep(): void {
-    this.activeIndex.update(
-      (i) => (i - 1 + this.steps.length) % this.steps.length,
-    );
-    this.progress.set(0);
+    const prev = (this.activeIndex() - 1 + this.steps.length) % this.steps.length;
+    this.setActiveStep(prev);
   }
 
   nextStep(): void {
-    this.activeIndex.update((i) => (i + 1) % this.steps.length);
-    this.progress.set(0);
+    const next = (this.activeIndex() + 1) % this.steps.length;
+    this.setActiveStep(next);
+  }
+
+  scrollToActiveTab(index: number): void {
+    if (isPlatformBrowser(this.platformId)) {
+      requestAnimationFrame(() => {
+        const tab = document.getElementById('roadmap-tab-' + index);
+        if (typeof tab?.scrollIntoView === 'function') {
+          tab.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center',
+          });
+        }
+      });
+    }
   }
 
   pauseAutoPlay(): void {
