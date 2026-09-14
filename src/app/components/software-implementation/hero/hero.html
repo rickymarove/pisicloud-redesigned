@@ -40,16 +40,17 @@
             </span>
           </a>
 
-          <a
+          <button
+            type="button"
             mat-stroked-button
-            href="#process"
-            class="rounded-full! border-[#066b5b]! text-[#066b5b]! hover:bg-[#066b5b]/5! bg-white! px-6! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2"
+            (click)="scrollToProcess()"
+            class="rounded-full! border-[#066b5b]! text-[#066b5b]! hover:bg-[#066b5b]/5! bg-white! px-6! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center gap-2 cursor-pointer"
           >
             <span class="flex items-center gap-2">
               <span>{{ 'SOFTWARE_IMPLEMENTATION.HERO.CTA_SECONDARY' | translate }}</span>
               <ng-icon name="tablerArrowDown" class="text-base text-[#066b5b] shrink-0" aria-hidden="true" />
             </span>
-          </a>
+          </button>
         </div>
       </div>
 
