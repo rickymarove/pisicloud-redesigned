@@ -21,6 +21,7 @@ describe('SupportMenu', () => {
       providers: [
         provideRouter([
           { path: '', component: DummyRouteComponent },
+          { path: 'software-implementation', component: DummyRouteComponent },
           { path: 'training-implementation', component: DummyRouteComponent },
           { path: 'customize-module', component: DummyRouteComponent },
           { path: 'about-pisi', component: DummyRouteComponent },
@@ -88,6 +89,15 @@ describe('SupportMenu', () => {
     expect(button.classList.contains('text-[#00382f]')).toBe(true);
     expect(button.classList.contains('font-semibold')).toBe(true);
     expect(button.getAttribute('aria-current')).toBe('page');
+  });
+
+  it('should be active on /software-implementation', async () => {
+    await router.navigateByUrl('/software-implementation');
+    fixture.detectChanges();
+    expect(component.isActive()).toBe(true);
+    const button = fixture.nativeElement.querySelector('button');
+    expect(button.classList.contains('bg-[#cde8e0]')).toBe(true);
+    expect(button.classList.contains('text-[#00382f]')).toBe(true);
   });
 
   it('should be active on /customize-module', async () => {

@@ -30,6 +30,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'software-implementation',
+    data: { seoKey: 'SOFTWARE_IMPLEMENTATION' },
+    loadComponent: () =>
+      import('../pages/software-implementation/software-implementation').then(
+        (m) => m.SoftwareImplementation,
+      ),
+  },
+  {
     path: 'training-implementation',
     data: { seoKey: 'TRAINING_IMPLEMENTATION' },
     loadComponent: () =>

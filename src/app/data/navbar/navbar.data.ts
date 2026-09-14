@@ -147,8 +147,7 @@ export const NAVBAR_SUPPORTS: readonly NavbarSupportItemConfig[] = [
     id: 'software-implementation',
     titleKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.SOFTWARE_IMPLEMENTATION.TITLE',
     descKey: 'UNIVERSAL.NAVBAR.SUPPORT_MENU.ITEMS.SOFTWARE_IMPLEMENTATION.DESC',
-    route: '/',
-    fragment: 'solution',
+    route: '/software-implementation',
     iconType: 'software-implementation',
   },
   {
