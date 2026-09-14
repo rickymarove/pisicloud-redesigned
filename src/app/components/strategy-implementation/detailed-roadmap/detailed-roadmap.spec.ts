@@ -95,29 +95,6 @@ describe('DetailedRoadmap', () => {
     expect(heading).toBeTruthy();
   });
 
-  it('should render navigation buttons and trigger prevStep and nextStep on click', () => {
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-
-    const buttons = compiled.querySelectorAll(
-      '#roadmap-panel-0 button[mat-stroked-button], #roadmap-panel-0 button[mat-flat-button]'
-    );
-    expect(buttons.length).toBe(2);
-
-    const prevBtn = buttons[0] as HTMLButtonElement;
-    const nextBtn = buttons[1] as HTMLButtonElement;
-
-    // Click next button
-    nextBtn.click();
-    fixture.detectChanges();
-    expect(component.activeIndex()).toBe(1);
-
-    // Click prev button
-    prevBtn.click();
-    fixture.detectChanges();
-    expect(component.activeIndex()).toBe(0);
-  });
-
   it('should handle scrollToActiveTab safely without errors', () => {
     expect(() => component.scrollToActiveTab(0)).not.toThrow();
     expect(() => component.scrollToActiveTab(99)).not.toThrow();

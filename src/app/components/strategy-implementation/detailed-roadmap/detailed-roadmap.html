@@ -118,55 +118,6 @@
           </div>
         }
       </div>
-
-      <!-- Navigation Controls (Prev / Step Counter / Next) -->
-      <div
-        class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between gap-2 sm:gap-4"
-      >
-        <button
-          mat-stroked-button
-          type="button"
-          (click)="prevStep()"
-          class="rounded-full! border-slate-200! text-slate-700! hover:bg-slate-50! hover:border-slate-300! px-3.5! sm:px-5! py-2! sm:py-2.5! h-auto! text-xs sm:text-sm! font-medium! transition-all! duration-200! flex! items-center! gap-1.5!"
-          [attr.aria-label]="
-            'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate
-          "
-        >
-          <ng-icon
-            name="bootstrapChevronLeft"
-            class="text-xs sm:text-sm text-slate-500"
-            aria-hidden="true"
-          />
-          <span>{{
-            'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.PREV_STEP' | translate
-          }}</span>
-        </button>
-
-        <!-- Step Indicator -->
-        <div class="text-xs sm:text-sm font-medium text-slate-500 tracking-wider">
-          <span class="font-bold text-[#066b5b]">{{ currentStep().number }}</span>
-          <span class="text-slate-400"> / 05</span>
-        </div>
-
-        <button
-          mat-flat-button
-          type="button"
-          (click)="nextStep()"
-          class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-3.5! sm:px-5! py-2! sm:py-2.5! h-auto! text-xs sm:text-sm! font-medium! shadow-xs! transition-all! duration-200! flex! items-center! gap-1.5!"
-          [attr.aria-label]="
-            'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate
-          "
-        >
-          <span>{{
-            'STRATEGY_IMPLEMENTATION.DETAILED_ROADMAP.NEXT_STEP' | translate
-          }}</span>
-          <ng-icon
-            name="bootstrapChevronRight"
-            class="text-xs sm:text-sm text-white"
-            aria-hidden="true"
-          />
-        </button>
-      </div>
     </div>
 
   </div>
