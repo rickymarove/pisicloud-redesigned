@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { bootstrapCheck2 } from '@ng-icons/bootstrap-icons';
-import { tablerArrowLeft, tablerArrowRight } from '@ng-icons/tabler-icons';
 
 export interface DetailedStep {
   readonly id: string;
@@ -65,8 +64,6 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
   viewProviders: [
     provideIcons({
       bootstrapCheck2,
-      tablerArrowLeft,
-      tablerArrowRight,
     }),
   ],
   templateUrl: './detailed-roadmap.html',
@@ -74,12 +71,6 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
     :host {
       display: block;
       width: 100%;
-    }
-
-    button[mat-icon-button] {
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
     }
   `,
 })
