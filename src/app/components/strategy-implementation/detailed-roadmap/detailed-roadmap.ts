@@ -12,11 +12,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgIcon, provideIcons } from '@ng-icons/core';
-import {
-  bootstrapCheck2,
-  bootstrapChevronLeft,
-  bootstrapChevronRight,
-} from '@ng-icons/bootstrap-icons';
+import { bootstrapCheck2 } from '@ng-icons/bootstrap-icons';
 
 export interface DetailedStep {
   readonly id: string;
@@ -68,8 +64,6 @@ export const DETAILED_STEPS: readonly DetailedStep[] = [
   viewProviders: [
     provideIcons({
       bootstrapCheck2,
-      bootstrapChevronLeft,
-      bootstrapChevronRight,
     }),
   ],
   templateUrl: './detailed-roadmap.html',
