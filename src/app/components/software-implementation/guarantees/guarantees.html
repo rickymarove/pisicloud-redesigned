@@ -1,0 +1,92 @@
+<section
+  id="guarantees"
+  class="relative w-full py-16 sm:py-20 lg:py-24 bg-linear-to-b from-[#f4fcf7] via-[#edf5f1]/40 to-white font-sans"
+  aria-labelledby="guarantees-heading"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Section Header with Two-Tone Formula -->
+    <div class="mx-auto max-w-3xl text-center mb-12 sm:mb-16">
+      <h2
+        id="guarantees-heading"
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-[#191c1b] tracking-tight leading-tight mb-4"
+      >
+        <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.TITLE_PREFIX' | translate }}</span>
+        <span class="text-[#066b5b]">{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.TITLE_HIGHLIGHT' | translate }}</span>
+        <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.TITLE_SUFFIX' | translate }}</span>
+      </h2>
+      <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+        {{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <!-- 4 Value Guarantee Cards -->
+    <div
+      class="max-w-4xl mx-auto rounded-2xl border border-[#dce6df] bg-white divide-y divide-[#dce6df] mb-16 sm:mb-20 overflow-hidden shadow-xs"
+    >
+      @for (guarantee of guarantees; track guarantee.key) {
+        <div class="flex items-start gap-4 sm:gap-5 p-5 sm:p-6 transition-colors duration-150 hover:bg-[#f8faf8]">
+          <!-- Icon Container -->
+          <div
+            class="w-11 h-11 shrink-0 rounded-xl bg-[#cde8e0]/50 text-[#066b5b] flex items-center justify-center mt-0.5"
+            aria-hidden="true"
+          >
+            <ng-icon [name]="guarantee.icon" class="text-xl" aria-hidden="true" />
+          </div>
+
+          <!-- Content -->
+          <div class="grow min-w-0">
+            <h3 class="text-base sm:text-lg font-bold text-[#191c1b] tracking-tight mb-1">
+              <span class="font-normal text-slate-400 mr-2 text-sm sm:text-base tabular-nums select-none">
+                {{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.ITEMS.' + guarantee.key + '.NUMBER' | translate }}
+              </span>
+              <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.ITEMS.' + guarantee.key + '.TITLE' | translate }}</span>
+            </h3>
+
+            <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed font-normal m-0">
+              {{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.ITEMS.' + guarantee.key + '.DESCRIPTION' | translate }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- Closing Callout Banner -->
+    <div
+      class="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#066b5b] via-[#076657] to-[#055145] p-8 sm:p-12 lg:p-14 text-white shadow-xl max-w-5xl mx-auto"
+    >
+      <!-- Atmospheric Background Glow -->
+      <div
+        class="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-white/10 blur-2xl"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="text-center lg:text-left max-w-2xl">
+          <h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3 leading-snug">
+            {{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.CALLOUT.TITLE' | translate }}
+          </h3>
+          <p class="text-white/80 text-sm sm:text-base leading-relaxed m-0">
+            {{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.CALLOUT.DESCRIPTION' | translate }}
+          </p>
+        </div>
+
+        <div class="shrink-0">
+          <a
+            mat-flat-button
+            routerLink="/contact-us"
+            class="group/btn rounded-full! bg-white! hover:bg-[#f4fcf7]! text-[#066b5b]! px-7 sm:px-8! py-3.5! h-auto! font-semibold! text-sm! sm:text-base! shadow-md! hover:shadow-lg! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center"
+          >
+            <span class="inline-flex items-center gap-2.5 justify-center">
+              <span>{{ 'SOFTWARE_IMPLEMENTATION.GUARANTEES.CALLOUT.CTA_BUTTON' | translate }}</span>
+              <ng-icon
+                name="tablerArrowRight"
+                class="text-lg sm:text-xl text-[#066b5b] shrink-0 transition-transform duration-200 group-hover/btn:translate-x-1"
+                aria-hidden="true"
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
