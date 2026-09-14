@@ -80,7 +80,7 @@
               >
                 <div>
                   <!-- Top Row: Step Number & Icon -->
-                  <div class="flex items-center justify-between mb-6">
+                  <div class="flex items-center justify-between mb-5 sm:mb-6">
                     <span
                       class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#cde8e0]/60 text-[#066b5b] font-bold text-sm select-none transition-colors duration-200 group-hover:bg-[#066b5b] group-hover:text-white"
                     >
@@ -93,11 +93,6 @@
                       <ng-icon [name]="step.icon" class="text-xl" aria-hidden="true" />
                     </div>
                   </div>
-
-                  <!-- Phase Label -->
-                  <p class="text-xs font-semibold uppercase tracking-wider text-[#066b5b] mb-1.5">
-                    {{ 'SOFTWARE_IMPLEMENTATION.PROCESS.STEPS.' + step.key + '.PHASE' | translate }}
-                  </p>
 
                   <!-- Step Title -->
                   <h3
