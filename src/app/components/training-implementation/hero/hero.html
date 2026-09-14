@@ -29,10 +29,12 @@
         <a
           mat-flat-button
           routerLink="/contact-us"
-          class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-7! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200!"
+          class="rounded-full! bg-[#066b5b]! hover:bg-[#055145]! text-white! px-7! py-3.5! h-auto! font-medium! text-sm! sm:text-base! shadow-xs! hover:shadow-md! active:scale-95! transition-all! duration-200! inline-flex items-center justify-center"
         >
-          <span>{{ 'TRAINING_IMPLEMENTATION.HERO.CTA_PRIMARY' | translate }}</span>
-          <ng-icon name="tablerArrowRight" class="text-base ml-2 text-white" aria-hidden="true" />
+          <span class="inline-flex items-center gap-2">
+            <span>{{ 'TRAINING_IMPLEMENTATION.HERO.CTA_PRIMARY' | translate }}</span>
+            <ng-icon name="tablerArrowRight" class="text-base sm:text-lg text-white shrink-0" aria-hidden="true" />
+          </span>
         </a>
       </div>
     </div>
