@@ -60,6 +60,17 @@ describe('SoftwareImplementation Hero', () => {
     expect(cta?.textContent).toContain('Consult Implementation');
   });
 
+  it('should render secondary CTA button and trigger scrollToProcess', () => {
+    const compiled = fixture.nativeElement as HTMLElement;
+    const secondaryBtn = compiled.querySelector('button[mat-stroked-button]');
+    expect(secondaryBtn).toBeTruthy();
+    expect(secondaryBtn?.textContent).toContain('Explore Methodology');
+
+    const spy = vi.spyOn(component, 'scrollToProcess');
+    (secondaryBtn as HTMLButtonElement).click();
+    expect(spy).toHaveBeenCalled();
+  });
+
   it('should not contain badge or chip elements', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('mat-chip')).toBeFalsy();
