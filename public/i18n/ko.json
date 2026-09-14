@@ -962,6 +962,10 @@
         "TITLE": "도입 전략 - 원활한 HR 시스템 구축 지원 | PisiCloud",
         "DESCRIPTION": "성공적인 HR 및 급여 소프트웨어 구축을 위한 검증된 도입 방법론을 알아보세요."
       },
+      "SOFTWARE_IMPLEMENTATION": {
+        "TITLE": "소프트웨어 구축 및 도입 지원 - 원활한 클라우드 HR 전환 | PisiCloud",
+        "DESCRIPTION": "PisiCloud 인사 및 급여 시스템을 위한 엔드투엔드 구축 서비스. 데이터 손실 제로 보장, 생체인식 장비 연동, 병행 급여 검증 제공."
+      },
       "CONTACT_US": {
         "TITLE": "문의하기 - 데모 신청 및 도입 상담 | PisiCloud",
         "DESCRIPTION": "PisiCloud 영업 및 지원팀에 문의하여 데모 예약 및 맞춤형 솔루션 견적을 받아보세요."
@@ -1167,6 +1171,106 @@
           "OUTPUT_LABEL": "핵심 산출물",
           "OUTPUT_TEXT": "실운영 성공적 오픈, 초기 시스템 안정화 완료 및 지속적인 전담 기술 지원 서비스."
         }
+      }
+    }
+  },
+  "SOFTWARE_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "성장 기업을 위한 ",
+      "TITLE_HIGHLIGHT": "엔드투엔드 소프트웨어 구축",
+      "TITLE_SUFFIX": " 솔루션",
+      "DESCRIPTION": "수작업 엑셀과 노후화된 기존 시스템에서 벗어나 PisiCloud의 통합 클라우드 인사·급여 플랫폼으로 원활하게 전환하세요. 공인 구축 전문가가 데이터 무결성 보장, 업무 중단 제로, 맞춤형 온보딩을 지원합니다.",
+      "CTA_PRIMARY": "도입 구축 상담",
+      "CTA_SECONDARY": "구축 프로세스 보기",
+      "IMAGE_ALT": "PisiCloud 소프트웨어 구축 및 클라우드 HR 대시보드 일러스트"
+    },
+    "PILLARS": {
+      "TITLE_PREFIX": "완벽한 시스템 안착을 위한 ",
+      "TITLE_HIGHLIGHT": "핵심 구축 서비스",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "데이터 추출부터 병행 급여 검증까지, 체계적인 전문 서비스를 통해 업무 공백 없는 안정적인 가동을 보장합니다.",
+      "ITEMS": {
+        "DATA_MIGRATION": {
+          "TITLE": "안전한 자동화 데이터 마이그레이션",
+          "DESCRIPTION": "직원 인사기록, 급여 내역, 휴가 잔여일수, 생체인식 식별값을 정밀하게 추출·정제·검증하여 100% 데이터 정합성을 확보합니다."
+        },
+        "CONFIGURATION": {
+          "TITLE": "기업 맞춤형 워크플로 및 정책 설정",
+          "DESCRIPTION": "복합 교대근무 일정, 다단계 결재선, 인도네시아 세무 규정(PPh 21 TER) 및 BPJS 사회보험 공식과 조직도를 맞춤 구성합니다."
+        },
+        "INTEGRATION": {
+          "TITLE": "생체인식 하드웨어 및 단말기 연동",
+          "DESCRIPTION": "지문인식기, 안면인식기, 출입 통제 게이트 및 기존 기업 ERP 시스템과 플러그 앤 플레이로 데이터를 실시간 동기화합니다."
+        },
+        "VALIDATION": {
+          "TITLE": "병행 급여 시뮬레이션 및 엄격한 UAT",
+          "DESCRIPTION": "기존 급여 체계와 동시 병행 검증을 수행하여 정식 가동 전 단 1원의 오차도 없는 완벽한 계산 결과를 확인합니다."
+        }
+      }
+    },
+    "PROCESS": {
+      "TITLE_PREFIX": "체계적인 4단계 ",
+      "TITLE_HIGHLIGHT": "구축 및 도입 방법론",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "다운타임을 최소화하고 데이터 정확성을 유지하며 조직 전체의 빠른 시스템 적응을 이끌어내는 검증된 프로세스입니다.",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "PHASE": "1단계",
+          "TITLE": "사전 분석 및 요구사항 정의",
+          "DESCRIPTION": "인사·급여·IT 실무진과 심층 워크숍을 진행하여 기존 업무 흐름을 진단하고 단계별 마일스톤을 확정합니다."
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "PHASE": "2단계",
+          "TITLE": "클라우드 환경 구축 및 정책 구성",
+          "DESCRIPTION": "클라우드 인스턴스를 세팅하고 조직 체계, 근태 및 교대근무 규칙, 커스텀 급여 산정식을 검증합니다."
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "PHASE": "3단계",
+          "TITLE": "데이터 이관 및 실무자 교육",
+          "DESCRIPTION": "기초 마스터 데이터를 안전하게 전환하고 하드웨어 단말기를 동기화하며 관리자 및 사용자 대상 맞춤 교육을 실시합니다."
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "PHASE": "4단계",
+          "TITLE": "병행 가동, 본 오픈 및 집중 기술지원",
+          "DESCRIPTION": "이중 급여 검증 완료 후 본 시스템을 가동하며 전담 엔지니어가 30일간 현장 및 원격으로 하이퍼케어 지원을 제공합니다."
+        }
+      }
+    },
+    "GUARANTEES": {
+      "TITLE_PREFIX": "기업들이 신뢰하는 ",
+      "TITLE_HIGHLIGHT": "PisiCloud 구축 전문성",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "수십 년간 축적된 인사 관리 도메인 지식과 최신 소프트웨어 엔지니어링을 결합하여 부담 없는 시스템 전환을 약속합니다.",
+      "ITEMS": {
+        "NO_DOWNTIME": {
+          "NUMBER": "01",
+          "TITLE": "업무 중단(다운타임) 제로",
+          "DESCRIPTION": "구축 및 전환 기간 중에도 매일의 출퇴근 기록과 급여 정산이 차질 없이 평소처럼 정상 가동됩니다."
+        },
+        "SECURITY": {
+          "NUMBER": "02",
+          "TITLE": "금융권 수준의 강력한 데이터 보안",
+          "DESCRIPTION": "엔드투엔드 암호화, 엄격한 접근 권한 분리, 자동 검증 체계를 통해 기업 핵심 정보를 안전하게 보호합니다."
+        },
+        "SPECIALIST": {
+          "NUMBER": "03",
+          "TITLE": "전담 구축 프로젝트 매니저 배정",
+          "DESCRIPTION": "공인 HR 전문가가 전담 매니저로 배정되어 설정, 일정 관리, 실무진 교육까지 전 과정을 밀착 지원합니다."
+        },
+        "LOCAL_COMPLIANCE": {
+          "NUMBER": "04",
+          "TITLE": "인도네시아 노동·세무 규정 100% 준수",
+          "DESCRIPTION": "최신 PPh 21 TER 세율표, BPJS 규정 및 인도네시아 최신 근로기준법 계산 로직을 기본 탑재하고 있습니다."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "안정적인 소프트웨어 도입을 시작할 준비가 되셨나요?",
+        "DESCRIPTION": "전문 구축 컨설턴트와의 상담을 통해 귀사에 최적화된 전환 일정과 로드맵을 설계해 보세요.",
+        "CTA_BUTTON": "전담 구축 전문가와 상담하기"
       }
     }
   }

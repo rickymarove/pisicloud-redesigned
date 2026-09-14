@@ -131,8 +131,8 @@ describe('UniversalNavbar', () => {
   it('should have 3 support items configured in navbar data', () => {
     expect(NAVBAR_SUPPORTS.length).toBe(3);
     const software = NAVBAR_SUPPORTS.find((s) => s.id === 'software-implementation');
-    expect(software?.route).toBe('/');
-    expect(software?.fragment).toBe('solution');
+    expect(software?.route).toBe('/software-implementation');
+    expect(software?.fragment).toBeUndefined();
     const training = NAVBAR_SUPPORTS.find((s) => s.id === 'training');
     expect(training?.route).toBe('/training-implementation');
     const customize = NAVBAR_SUPPORTS.find((s) => s.id === 'customize');

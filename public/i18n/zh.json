@@ -962,6 +962,10 @@
         "TITLE": "实施策略 - 平稳高效的系统上线方案 | PisiCloud",
         "DESCRIPTION": "探索我们经过实践检验的人力资源软件部署、定制和培训方法论。"
       },
+      "SOFTWARE_IMPLEMENTATION": {
+        "TITLE": "软件实施 - 平稳高效的 HR 与薪酬系统落地 | PisiCloud",
+        "DESCRIPTION": "PisiCloud 提供全方位企业级软件实施服务。保障零数据丢失、生物识别设备集成及并行薪资精准校验。"
+      },
       "CONTACT_US": {
         "TITLE": "联系我们 - 预约演示与业务咨询 | PisiCloud",
         "DESCRIPTION": "随时联系 PisiCloud 销售与技术支持团队，预约产品演示或获取报价方案。"
@@ -1167,6 +1171,106 @@
           "OUTPUT_LABEL": "核心交付成果",
           "OUTPUT_TEXT": "生产系统平稳上线运营、初期系统稳定保障与长期专属售后支持服务。"
         }
+      }
+    }
+  },
+  "SOFTWARE_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "端到端 ",
+      "TITLE_HIGHLIGHT": "企业级软件实施",
+      "TITLE_SUFFIX": " 助力业务稳健增长",
+      "DESCRIPTION": "平稳摆脱繁琐的 Excel 表格与过时的旧系统，迁移至 PisiCloud 一体化云端人事与薪酬平台。我们经验丰富的认证实施专家保障数据完整性、零业务中断与专属入职培训。",
+      "CTA_PRIMARY": "咨询实施方案",
+      "CTA_SECONDARY": "了解实施方法",
+      "IMAGE_ALT": "PisiCloud 软件实施与云端人事部署仪表板插图"
+    },
+    "PILLARS": {
+      "TITLE_PREFIX": "全流程专属服务，保障 ",
+      "TITLE_HIGHLIGHT": "顺畅平稳交付",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "从历史数据迁移到双轨薪酬校验，我们结构化的交付服务确保企业全面就绪，无缝切换。",
+      "ITEMS": {
+        "DATA_MIGRATION": {
+          "TITLE": "自动化安全数据迁移",
+          "DESCRIPTION": "对员工历史档案、薪资记录、假期余额及考勤 ID 进行完整提取、清洗与验证，确保 100% 审计合规无差错。"
+        },
+        "CONFIGURATION": {
+          "TITLE": "专属业务流程与规则配置",
+          "DESCRIPTION": "深度适配复杂多班次排班、多级审批矩阵、印尼所得税（PPh 21 TER）及 BPJS 社保法定公式与组织架构。"
+        },
+        "INTEGRATION": {
+          "TITLE": "生物识别考勤硬件无缝集成",
+          "DESCRIPTION": "即插即用连接指纹考勤机、人脸识别终端、门禁闸机及现有企业 ERP 系统，实现数据实时同步。"
+        },
+        "VALIDATION": {
+          "TITLE": "双轨并行测算与严格 UAT 验收",
+          "DESCRIPTION": "与现有薪酬周期同步进行端到端全真模拟，确保系统正式切换前每一分钱的计算都精准无误。"
+        }
+      }
+    },
+    "PROCESS": {
+      "TITLE_PREFIX": "4 阶段结构化 ",
+      "TITLE_HIGHLIGHT": "系统落地实施框架",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "经过充分验证的透明化方法论，旨在最大程度减少停机时间，确保数据精准度，保障团队快速上手。",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "PHASE": "第一阶段",
+          "TITLE": "需求调研与蓝图确立",
+          "DESCRIPTION": "与您的人事、薪资和 IT 团队开展深度研讨，梳理现有工作流，明确业务差异与关键上线里程碑。"
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "PHASE": "第二阶段",
+          "TITLE": "系统环境搭建与参数配置",
+          "DESCRIPTION": "开通企业云环境，建立组织架构，配置考勤排班规则，并精准验证各类薪酬结算公式。"
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "PHASE": "第三阶段",
+          "TITLE": "数据迁移与团队赋能培训",
+          "DESCRIPTION": "安全导入期初主数据，同步硬件设备，并为 HR 管理员、各级主管及普通员工提供分角色实操培训。"
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "PHASE": "第四阶段",
+          "TITLE": "双轨试运行、正式上线与深度护航",
+          "DESCRIPTION": "双系统并行验算，完成系统正式割接，并由实施工程师提供为期 30 天的专属保驾护航。"
+        }
+      }
+    },
+    "GUARANTEES": {
+      "TITLE_PREFIX": "为什么企业选择 ",
+      "TITLE_HIGHLIGHT": "PisiCloud 实施团队",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "我们将数十年的 HR 领域经验与现代敏捷软件工程深度融合，让您的系统转型轻松无忧。",
+      "ITEMS": {
+        "NO_DOWNTIME": {
+          "NUMBER": "01",
+          "TITLE": "零业务中断承诺",
+          "DESCRIPTION": "在整个实施与切换周期中，您的日常考勤打卡与薪资发放保持正常运转，无一分钟停机影响。"
+        },
+        "SECURITY": {
+          "NUMBER": "02",
+          "TITLE": "金融级数据安全与合规",
+          "DESCRIPTION": "采用全链路数据加密、严格访问隔离及自动化比对校验，确保企业核心数据绝对安全机密。"
+        },
+        "SPECIALIST": {
+          "NUMBER": "03",
+          "TITLE": "专属实施项目经理",
+          "DESCRIPTION": "指派资深实施顾问全程跟进您的项目，协助系统配置、推进里程碑并指导团队熟练掌握应用。"
+        },
+        "LOCAL_COMPLIANCE": {
+          "NUMBER": "04",
+          "TITLE": "100% 紧跟印尼最新法律法规",
+          "DESCRIPTION": "预设印尼最新劳动法规、PPh 21 TER 综合扣缴税率表及 BPJS 法定各项保险核算逻辑。"
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "准备好开启无缝高效的系统上线了吗？",
+        "DESCRIPTION": "立即与我们的专业实施顾问预约交流，定制最契合您企业的数字化转型时间表。",
+        "CTA_BUTTON": "预约专属实施顾问"
       }
     }
   }

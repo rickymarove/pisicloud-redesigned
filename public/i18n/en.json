@@ -962,6 +962,10 @@
         "TITLE": "Strategy Implementation - Smooth HR Rollout | PisiCloud",
         "DESCRIPTION": "Discover our proven methodology for seamless HR & payroll software deployment, customization, and training."
       },
+      "SOFTWARE_IMPLEMENTATION": {
+        "TITLE": "Software Implementation - Smooth HR & Payroll Rollout | PisiCloud",
+        "DESCRIPTION": "End-to-end enterprise software implementation services for PisiCloud HR. Guaranteed zero data loss, biometric integration, and parallel payroll testing."
+      },
       "CONTACT_US": {
         "TITLE": "Contact Us - Get in Touch with PisiCloud",
         "DESCRIPTION": "Contact PisiCloud sales and support team. Book a demo, request a quote, or ask questions about our HR system."
@@ -1167,6 +1171,106 @@
           "OUTPUT_LABEL": "Primary Deliverable",
           "OUTPUT_TEXT": "Live Production Operations, System Stabilization, and Ongoing Dedicated Support Service."
         }
+      }
+    }
+  },
+  "SOFTWARE_IMPLEMENTATION": {
+    "HERO": {
+      "TITLE_PREFIX": "End-to-End ",
+      "TITLE_HIGHLIGHT": "Software Implementation",
+      "TITLE_SUFFIX": " for Growing Enterprises",
+      "DESCRIPTION": "Seamlessly transition from fragmented spreadsheets and legacy systems to PisiCloud's unified HR and payroll platform. Our certified implementation specialists deliver guaranteed data integrity, zero business interruption, and tailored system onboarding.",
+      "CTA_PRIMARY": "Consult Implementation",
+      "CTA_SECONDARY": "Explore Methodology",
+      "IMAGE_ALT": "PisiCloud software implementation and cloud HR deployment dashboard illustration"
+    },
+    "PILLARS": {
+      "TITLE_PREFIX": "Comprehensive Services for ",
+      "TITLE_HIGHLIGHT": "Seamless Deployment",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "From data extraction to parallel payroll validation, our structured services ensure complete operational readiness without disruption.",
+      "ITEMS": {
+        "DATA_MIGRATION": {
+          "TITLE": "Automated & Secure Data Migration",
+          "DESCRIPTION": "Complete extraction, cleansing, and validation of historical employee records, compensation histories, leave quotas, and biometric IDs with 100% audit accuracy."
+        },
+        "CONFIGURATION": {
+          "TITLE": "Custom Workflow & Policy Setup",
+          "DESCRIPTION": "Tailoring complex shift rotations, multi-tier approvals, Indonesian tax (PPh 21 TER), BPJS Kesehatan & Ketenagakerjaan formulas, and organizational hierarchies."
+        },
+        "INTEGRATION": {
+          "TITLE": "Hardware & Biometric Integration",
+          "DESCRIPTION": "Direct plug-and-play connectivity with physical fingerprint machines, facial recognition terminals, access gates, and third-party corporate ERP systems."
+        },
+        "VALIDATION": {
+          "TITLE": "Parallel Runs & Rigorous UAT",
+          "DESCRIPTION": "Comprehensive parallel testing alongside existing payroll cycles to ensure exact penny-perfect calculation parity and flawless system operation before cutover."
+        }
+      }
+    },
+    "PROCESS": {
+      "TITLE_PREFIX": "A Structured 4-Stage ",
+      "TITLE_HIGHLIGHT": "Rollout Framework",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "A proven, transparent methodology designed to minimize downtime, ensure data accuracy, and guarantee smooth organizational adoption.",
+      "STEPS": {
+        "STEP_1": {
+          "STEP_NUMBER": "01",
+          "PHASE": "Phase 01",
+          "TITLE": "Discovery & Scope Audit",
+          "DESCRIPTION": "In-depth workshops with your HR, payroll, and IT teams to map current workflows, identify compliance requirements, and establish milestone deliverables."
+        },
+        "STEP_2": {
+          "STEP_NUMBER": "02",
+          "PHASE": "Phase 02",
+          "TITLE": "System Setup & Configuration",
+          "DESCRIPTION": "Environment provisioning, organizational structure mapping, shift and attendance rule setup, and custom payroll formula validation."
+        },
+        "STEP_3": {
+          "STEP_NUMBER": "03",
+          "PHASE": "Phase 03",
+          "TITLE": "Data Migration & Cutover",
+          "DESCRIPTION": "Secure transfer of master data, validation of opening balances, hardware terminal synchronization, and role-based training for administrators and managers."
+        },
+        "STEP_4": {
+          "STEP_NUMBER": "04",
+          "PHASE": "Phase 04",
+          "TITLE": "Parallel Run, Go-Live & Hypercare",
+          "DESCRIPTION": "Dual-system payroll run verification, production cutover, and 30 days of dedicated hypercare support with our on-site and remote engineers."
+        }
+      }
+    },
+    "GUARANTEES": {
+      "TITLE_PREFIX": "Why Enterprises Choose ",
+      "TITLE_HIGHLIGHT": "PisiCloud Implementation",
+      "TITLE_SUFFIX": "",
+      "DESCRIPTION": "We combine decades of HR domain expertise with modern software engineering to make your system transition effortless.",
+      "ITEMS": {
+        "NO_DOWNTIME": {
+          "NUMBER": "01",
+          "TITLE": "Zero Business Interruption",
+          "DESCRIPTION": "Your daily operations, attendance tracking, and payroll disbursements run continuously without a single minute of downtime throughout the rollout."
+        },
+        "SECURITY": {
+          "NUMBER": "02",
+          "TITLE": "Bank-Grade Security & Integrity",
+          "DESCRIPTION": "End-to-end data encryption, strict access isolation, and automated validation rules ensure complete confidentiality and error-free record migration."
+        },
+        "SPECIALIST": {
+          "NUMBER": "03",
+          "TITLE": "Dedicated Implementation Lead",
+          "DESCRIPTION": "A certified HR system specialist is assigned exclusively to your organization to guide configuration, coordinate milestones, and train your team."
+        },
+        "LOCAL_COMPLIANCE": {
+          "NUMBER": "04",
+          "TITLE": "100% Indonesian Regulatory Compliance",
+          "DESCRIPTION": "Pre-configured for current Indonesian labor regulations, latest PPh 21 TER withholding tables, and statutory BPJS calculations."
+        }
+      },
+      "CALLOUT": {
+        "TITLE": "Ready for a Seamless Software Rollout?",
+        "DESCRIPTION": "Schedule a discovery session with our implementation specialists to plan your organization's transition timeline.",
+        "CTA_BUTTON": "Talk to an Implementation Specialist"
       }
     }
   }
