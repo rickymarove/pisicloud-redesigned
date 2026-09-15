@@ -1,6 +1,10 @@
 <universal-navbar />
 <router-outlet />
-<demo-video-modal />
+
+@defer (when modalService.isOpen()) {
+  <demo-video-modal />
+}
+
 <universal-interested />
 <universal-footer />
 <scroll-to-top />
