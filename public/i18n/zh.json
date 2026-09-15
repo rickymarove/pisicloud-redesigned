@@ -1102,10 +1102,6 @@
       "TITLE_PREFIX": "详细实施",
       "TITLE_HIGHLIGHT": "阶段解析",
       "SUBTITLE": "深入解析PISICloud ERP实施方法论的各个关键步骤与交付标准。",
-      "PREV_STEP": "上一阶段",
-      "NEXT_STEP": "下一阶段",
-      "PHASE_LABEL": "阶段",
-      "KEY_HIGHLIGHTS": "核心要点：",
       "STEPS": {
         "PREPARATION": {
           "NUMBER": "01",

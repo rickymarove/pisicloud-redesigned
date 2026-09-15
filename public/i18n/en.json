@@ -1102,10 +1102,6 @@
       "TITLE_PREFIX": "Detailed ",
       "TITLE_HIGHLIGHT": "Implementation Phases",
       "SUBTITLE": "A comprehensive deep dive into each stage of the ERP deployment methodology.",
-      "PREV_STEP": "Previous Phase",
-      "NEXT_STEP": "Next Phase",
-      "PHASE_LABEL": "Phase",
-      "KEY_HIGHLIGHTS": "Key Focus Areas:",
       "STEPS": {
         "PREPARATION": {
           "NUMBER": "01",

@@ -1102,10 +1102,6 @@
       "TITLE_PREFIX": "Tahapan Detail ",
       "TITLE_HIGHLIGHT": "Implementasi",
       "SUBTITLE": "Penjelasan mendalam setiap tahapan metodologi implementasi ERP PISICloud.",
-      "PREV_STEP": "Tahap Sebelumnya",
-      "NEXT_STEP": "Tahap Selanjutnya",
-      "PHASE_LABEL": "Fase",
-      "KEY_HIGHLIGHTS": "Poin Pembahasan:",
       "STEPS": {
         "PREPARATION": {
           "NUMBER": "01",

@@ -1102,10 +1102,6 @@
       "TITLE_PREFIX": "상세 구축 ",
       "TITLE_HIGHLIGHT": "단계별 안내",
       "SUBTITLE": "PISICloud ERP 구축 방법론의 각 단계별 핵심 실행 사항과 산출물을 상세히 안내합니다.",
-      "PREV_STEP": "이전 단계",
-      "NEXT_STEP": "다음 단계",
-      "PHASE_LABEL": "단계",
-      "KEY_HIGHLIGHTS": "핵심 논의 항목:",
       "STEPS": {
         "PREPARATION": {
           "NUMBER": "01",

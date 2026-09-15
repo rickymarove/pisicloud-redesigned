@@ -1102,10 +1102,6 @@
       "TITLE_PREFIX": "詳細導入",
       "TITLE_HIGHLIGHT": "フェーズ解説",
       "SUBTITLE": "PISICloud ERP導入メソドロジーの各フェーズにおける具体的な実施事項と成果物を詳しく解説します。",
-      "PREV_STEP": "前のフェーズ",
-      "NEXT_STEP": "次のフェーズ",
-      "PHASE_LABEL": "フェーズ",
-      "KEY_HIGHLIGHTS": "重点項目：",
       "STEPS": {
         "PREPARATION": {
           "NUMBER": "01",
