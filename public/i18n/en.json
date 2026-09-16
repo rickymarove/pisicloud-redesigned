@@ -981,6 +981,10 @@
       "CUSTOMIZE_MODULE": {
         "TITLE": "Custom Module - Tailored Software Solutions | PISICloud",
         "DESCRIPTION": "Specialized software module development services tailored to your unique enterprise requirements and continuous business growth."
+      },
+      "NOT_FOUND": {
+        "TITLE": "404 - Page Not Found | PisiCloud",
+        "DESCRIPTION": "The page you are looking for could not be found."
       }
     }
   },
@@ -1273,5 +1277,14 @@
         "CTA_BUTTON": "Talk to an Implementation Specialist"
       }
     }
+  },
+  "NOT_FOUND": {
+    "TITLE_PREFIX": "Page ",
+    "TITLE_HIGHLIGHT": "not",
+    "TITLE_SUFFIX": " found.",
+    "DESCRIPTION": "We can’t seem to find the page you are looking for.",
+    "HOME_BUTTON": "Home",
+    "CONTACT_BUTTON": "Contact Us",
+    "LOGO_ALT": "PisiCloud Logo"
   }
 }

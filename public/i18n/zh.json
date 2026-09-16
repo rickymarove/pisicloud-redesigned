@@ -981,6 +981,10 @@
       "CUSTOMIZE_MODULE": {
         "TITLE": "定制模块 - 企业专属软件定制开发服务 | PISICloud",
         "DESCRIPTION": "PISICloud 提供专业的定制软件模块开发服务，根据您独特的业务流程量身定制，助力企业持续增长。"
+      },
+      "NOT_FOUND": {
+        "TITLE": "404 - 页面未找到 | PisiCloud",
+        "DESCRIPTION": "无法找到您正在寻找的页面。"
       }
     }
   },
@@ -1273,5 +1277,14 @@
         "CTA_BUTTON": "预约专属实施顾问"
       }
     }
+  },
+  "NOT_FOUND": {
+    "TITLE_PREFIX": "页面",
+    "TITLE_HIGHLIGHT": "未",
+    "TITLE_SUFFIX": "找到。",
+    "DESCRIPTION": "我们似乎找不到您正在寻找的页面。",
+    "HOME_BUTTON": "首页",
+    "CONTACT_BUTTON": "联系我们",
+    "LOGO_ALT": "PisiCloud 标志"
   }
 }

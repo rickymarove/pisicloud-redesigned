@@ -981,6 +981,10 @@
       "CUSTOMIZE_MODULE": {
         "TITLE": "Modul Kustom - Solusi Modul HR Khusus Bisnis Anda | PISICloud",
         "DESCRIPTION": "Layanan pengembangan modul perangkat lunak khusus PisiCloud yang disesuaikan dengan keunikan proses bisnis dan pertumbuhan perusahaan Anda."
+      },
+      "NOT_FOUND": {
+        "TITLE": "404 - Halaman Tidak Ditemukan | PisiCloud",
+        "DESCRIPTION": "Halaman yang Anda cari tidak dapat ditemukan."
       }
     }
   },
@@ -1273,5 +1277,14 @@
         "CTA_BUTTON": "Hubungi Spesialis Implementasi"
       }
     }
+  },
+  "NOT_FOUND": {
+    "TITLE_PREFIX": "Halaman ",
+    "TITLE_HIGHLIGHT": "tidak",
+    "TITLE_SUFFIX": " ditemukan.",
+    "DESCRIPTION": "Kami tidak dapat menemukan halaman yang Anda cari.",
+    "HOME_BUTTON": "Beranda",
+    "CONTACT_BUTTON": "Hubungi Kami",
+    "LOGO_ALT": "Logo PisiCloud"
   }
 }

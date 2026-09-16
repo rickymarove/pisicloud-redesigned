@@ -981,6 +981,10 @@
       "CUSTOMIZE_MODULE": {
         "TITLE": "カスタムモジュール - 企業専用ソフトウェア開発 | PISICloud",
         "DESCRIPTION": "お客様独自の業務フローや将来の成長にフィットする PISICloud の専用ソフトウェアモジュール開発サービス。"
+      },
+      "NOT_FOUND": {
+        "TITLE": "404 - ページが見つかりません | PisiCloud",
+        "DESCRIPTION": "お探しのページは見つかりませんでした。"
       }
     }
   },
@@ -1273,5 +1277,14 @@
         "CTA_BUTTON": "導入スペシャリストに相談する"
       }
     }
+  },
+  "NOT_FOUND": {
+    "TITLE_PREFIX": "ページが",
+    "TITLE_HIGHLIGHT": "見つかり",
+    "TITLE_SUFFIX": "ません。",
+    "DESCRIPTION": "お探しのページが見つかりませんでした。",
+    "HOME_BUTTON": "ホーム",
+    "CONTACT_BUTTON": "お問い合わせ",
+    "LOGO_ALT": "PisiCloud ロゴ"
   }
 }

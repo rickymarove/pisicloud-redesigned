@@ -5,6 +5,8 @@
   <demo-video-modal />
 }
 
-<universal-interested />
+@if (!isInterestedHidden()) {
+  <universal-interested />
+}
 <universal-footer />
 <scroll-to-top />
