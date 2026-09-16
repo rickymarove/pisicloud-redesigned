@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { provideTranslateService } from '@ngx-translate/core';
 import { StrategyImplementation } from './strategy-implementation';
 
@@ -9,7 +10,7 @@ describe('StrategyImplementation', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [StrategyImplementation],
-      providers: [provideTranslateService()],
+      providers: [provideRouter([]), provideTranslateService()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(StrategyImplementation);
